@@ -1,0 +1,15 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2016 Amasty (https://www.amasty.com)
+ * @package Amasty_Shopby
+ */
+?>
+<div class="amshopby-apply-block">
+    <script>
+        window.apply_page_data = '<?php echo $this->getPageDataForApplyButtonAsJson(); ?>' ;
+        window.applied_filters_codes = '<?php echo $this->getAppliedAttributeOptionsConfig(); ?>' ;
+        window.not_filters_query_params = '<?php echo $this->getNotFilterQueryParams(); ?>' ;
+    </script>
+    <button class="button amshopby-apply-button"><?php echo $this->__('Apply filters') ?></button>
+</div>
